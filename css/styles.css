@@ -32,3 +32,10 @@
 .institute {
   margin-bottom: 0;
 }
+
+.plain-list {
+  list-style: none;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
+}
