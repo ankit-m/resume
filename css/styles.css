@@ -1,0 +1,10 @@
+.navbar-email {
+  padding: 4px;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-email:hover {
+  text-decoration: none;
+}
