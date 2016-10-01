@@ -8,3 +8,19 @@
 .navbar-email:hover {
   text-decoration: none;
 }
+
+.projects {
+  background-color: #eceeef;
+}
+
+.jumbotron {
+  margin: 0 !important;
+}
+
+.section-heading {
+  padding: 30px 0;
+}
+
+.row {
+  padding-bottom: 30px;
+}
