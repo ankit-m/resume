@@ -46,11 +46,11 @@ var education = {
   display: function() {}
 };
 
-var experience = {
+var work = {
   jobs: [{
     employer: 'Google Summer of Code',
     title: 'CSE at TU Wien',
-    location: 'Remote',
+    location: 'Gandhinagar',
     dates: 'April 2016 - August 2016',
     description: 'Developed and deployed a language learning Chrome extension - Mind The Word. '
   },

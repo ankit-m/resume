@@ -23,8 +23,8 @@ bio.display = function() {
   $('#contact').append(HTMLblog.replace('%data%', bio.contacts.blog));
 };
 
-experience.display = function() {
-  experience.jobs.forEach(function(job) {
+work.display = function() {
+  work.jobs.forEach(function(job) {
     var article = $(HTMLworkStart),
       card = $(HTMLworkCard),
       details = $(HTMLworkDetails);
@@ -84,7 +84,7 @@ awards.display = function() {
 }
 
 bio.display();
-experience.display();
+work.display();
 projects.display();
 education.display();
 awards.display();
