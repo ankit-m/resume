@@ -15,42 +15,56 @@ var HTMLbioPic = '<img src="%data%" class="biopic">';
 // var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li>%data%</li>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkStart = '<article class="col-md-4"></article>';
+var HTMLworkCard = '<div class="card card-block"></div>';
+var HTMLworkEmployer = '<h4 class="card-title">%data%</h4>';
+var HTMLworkDetails = '<p class="card-text"></p>';
+var HTMLworkTitle = '<small>%data%</small><small> | </small>';
+var HTMLworkDates = '<small class="text-muted">%data%</small>';
+var HTMLworkLocation = '<span class="card-link text-muted">%data%</span>';
+var HTMLworkDescription = '<p class="card-text">%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectStart = '<article class="col-md-4 col-lg-3 col-sm-6"></article>';
+var HTMLprojectCard = '<div class="card card-block"></div>';
+var HTMLprojectDates = '<p class="card-text"><small class="text-muted">%data%</small></p>';
+var HTMLprojectTitle = '<h4 class="card-title">%data%</h4>';
+var HTMLprojectDescription = '<p class="card-text">%data%</p>';
+// var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolStart = '<article class="col-md-6"></article>';
+var HTMLSchoolItem = '<div class="education-item"></div>';
+var HTMLschoolName = '<p class="lead institute">%data%, ';
+var HTMLschoolLocation = '%data%</p>';
+var HTMLschoolDegree = '<p>%data% ';
+var HTMLschoolMajor = '(%data%)</p>';
+var HTMLschoolDivider = '<hr class="m-y-2 hidden-md-up">';
+// var HTMLschoolDates = '<div class="date-text">%data%</div>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+// var HTMLonlineClasses = '<h3>Online Classes</h3>';
+var HTMLonlineStart = '<div class="education-item"></div>';
+var HTMLonlineTitle = '<p class="lead online-course-title">%data%</p>';
+var HTMLonlineSchool = '<p>%data%, ';
+var HTMLonlineDates = '%data%</p>';
+// var HTMLonlineURL = '<br><a href="#">%data%</a>';
+
+var HTMLawardStart = '<article></article>';
+var HTMLawardItem = '<ul class="lead"></ul>';
+var HTMLawardTitle = '<li>%data%</li>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
 var map;
 function initializeMap() {
+  console.log('mappp');
   var locations;
   var mapOptions = {
     disableDefaultUI: true
   };
-  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 0, lng: 0},
+    zoom: 2
+  });
 
   function locationFinder() {
     var locations = [];
@@ -58,7 +72,7 @@ function initializeMap() {
     education.schools.forEach(function(school){
       locations.push(school.location);
     });
-    work.jobs.forEach(function(job){
+    experience.jobs.forEach(function(job){
       locations.push(job.location);
     });
     return locations;
@@ -93,13 +107,14 @@ function initializeMap() {
   }
 
   function pinPoster(locations) {
-    var service = new google.maps.places.PlacesService(map);
-      locations.forEach(function(place){
-      var request = {
-        query: place
-      };
-      service.textSearch(request, callback);
-    });
+    var service = new google.maps.places.Pla;
+    console.log(service);
+    // locations.forEach(function(place) {
+    //   var request = {
+    //     query: place
+    //   };
+    //   service.textSearch(request, callback);
+    // });
   }
 
   window.mapBounds = new google.maps.LatLngBounds();
@@ -112,11 +127,11 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+// window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-//window.addEventListener('resize', function(e) {
-  //Make sure the map bounds get updated on page resize
+// window.addEventListener('resize', function(e) {
+//   //Make sure the map bounds get updated on page resize
 //  map.fitBounds(mapBounds);
-//});
+// });

@@ -28,11 +28,19 @@ var education = {
     majors: 'Information and Communication Technology',
     dates: '',
     url: ''
+  },
+  {
+    name: 'KV INS Hamla',
+    location: 'Mumbai',
+    degree: 'High School',
+    majors: 'Computer Science',
+    dates: '',
+    url: ''
   }],
   onlineCourses: [{
     title: 'Udacity Front-End Nanodegree',
     school: 'Udacity',
-    dates: '',
+    dates: 'August 2016 - October 2016',
     url: ''
   }],
   display: function() {}
@@ -51,23 +59,41 @@ var experience = {
     title: 'Web Developer',
     location: 'Gandhinagar',
     dates: 'June 2015 - November 2015',
-    description: 'Employee Training Software'
+    description: 'Developed an employee training module with various performance monitoring and evaluation features.'
   }],
   display: function() {}
 };
 
-var achievements = {
+var awards = {
   items: [{
-    description: '',
-    url: ''
-  }]
+    title: 'Winner ThinkQuest 2011',
+    url: '',
+    description: ''
+  },
+  {
+    title: 'Winner InOut Hackathon 2016',
+    url: '',
+    description: ''
+  },
+  {
+    title: 'Chairperson GDG DAIICT',
+    url: '',
+    description: ''
+  }],
+  display: function() {}
 };
 
 var projects = {
   projects: [{
-    title: '',
-    dates: '',
-    description: '',
+    title: 'Project Surat',
+    dates: 'August 2016',
+    description: 'A real-time, location based file sharing system. Designed and optimized for mobile use.',
+    images: ''
+  },
+  {
+    title: 'SFIP',
+    dates: 'Jan 2016 - April 2016',
+    description: 'Portal to simplify interaction of students and faculty of various insitutions.',
     images: ''
   }],
   display: function() {}

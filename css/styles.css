@@ -13,7 +13,7 @@
   background-color: #eceeef;
 }
 
-.achievements {
+.awards {
   background-color: #eceeef;
 }
 
@@ -30,6 +30,10 @@
 }
 
 .institute {
+  margin-bottom: 0;
+}
+
+.online-course-title {
   margin-bottom: 0;
 }
 
