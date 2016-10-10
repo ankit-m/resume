@@ -5,24 +5,19 @@ function displayNav() {
 }
 
 bio.display = function() {
-  // insert name
   $('#name').text(bio.name);
 
-  // insert objective
   $('#objective').text(bio.welcomeMessage);
 
-  // insert comma seperated interests/roles in the list
   var interests = bio.role.split(',');
   interests.forEach(function(e) {
     $('#interests').append(HTMLheaderRole.replace('%data%', e));
   });
 
-  // insert skills
   bio.skills.forEach(function(e) {
     $('#skills').append(HTMLskills.replace('%data%', e));
   });
 
-  // insert contact details
   $('#contact').append(HTMLgithub.replace('%data%', bio.contacts.github));
   $('#contact').append(HTMLtwitter.replace('%data%', bio.contacts.twitter));
   $('#contact').append(HTMLemail.replace('%data%', bio.contacts.email));
@@ -57,7 +52,7 @@ projects.display = function() {
       var id = image.split('/')[1].split('.')[0];
       var imageLink = $(HTMLprojectImageLink.replace('%data%','#' + id));
       var imageModal = $(HTMLprojectModal.replace('%data%', id));
-      imageLink.append(HTMLprojectImageCircle.replace('%data%', image))
+      imageLink.append(HTMLprojectImageCircle.replace('%data%', image));
       images.append(imageLink);
       imageModal.append(
         $(HTMLprojectModalDiv).append(
@@ -90,7 +85,7 @@ education.display = function() {
   var article2 = $(HTMLschoolStart);
   education.onlineCourses.forEach(function(course) {
     var courseDiv = $(HTMLonlineStart);
-    var courseSub = HTMLonlineSchool.replace('%data%', course.school) + HTMLonlineDates.replace('%data%', course.dates)
+    var courseSub = HTMLonlineSchool.replace('%data%', course.school) + HTMLonlineDates.replace('%data%', course.dates);
     courseDiv.append(HTMLonlineTitle.replace('%data%', course.title));
     courseDiv.append(courseSub);
     article2.append(courseDiv);
@@ -106,7 +101,7 @@ awards.display = function() {
     article.append(awardItem);
   });
   $('#award-items').append(article);
-}
+};
 
 displayNav();
 bio.display();

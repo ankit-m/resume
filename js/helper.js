@@ -3,8 +3,6 @@ var HTMLnavEmail = '<a class="pull-xs-right navbar-email text-muted" href="mailt
 
 var HTMLheaderRole = '<li>%data%</li>';
 
-// var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-// var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li><i class="fa fa-github" aria-hidden="true"></i> %data%</li>';
 var HTMLtwitter = '<li><i class="fa fa-twitter" aria-hidden="true"></i> %data%</li>';
 var HTMLemail = '<li><i class="fa fa-envelope" aria-hidden="true"></i> %data%</li>';
