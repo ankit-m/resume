@@ -36,7 +36,7 @@ var HTMLprojectModal = '<div class="modal fade" id="%data%"></div>';
 var HTMLprojectModalDiv = '<div class="modal-dialog" role="document"></div>';
 var HTMLprojectModalContent = '<div class="modal-content"></div>';
 var HTMLprojectModalBody = '<div class="modal-body"></div>';
-var HTMLprojectModalImage = '<img src="%data%" style="width: 100%" alt="" />';
+var HTMLprojectModalImage = '<img src="%data%" style="width: 100%" />';
 
 var HTMLschoolStart = '<article class="col-md-6"></article>';
 var HTMLschoolItem = '<div class="education-item"></div>';

@@ -98,7 +98,7 @@ var projects = {
     description: 'Portal to simplify interaction of students and faculty of various insitutions.',
     images: [
       'images/sfip1.jpg',
-      'images/sfip2.png',
+      'images/sfip2.jpg',
       'images/sfip3.jpg'
     ]
   }],
