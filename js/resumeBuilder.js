@@ -1,3 +1,9 @@
+function displayNav() {
+  $('#navbar')
+    .append(HTMLnavAvatar.replace('%data%', bio.biopic))
+    .append(HTMLnavEmail.replace(/\%data\%/g, bio.contacts.email));   //Regex to replace all occurences of %data%
+}
+
 bio.display = function() {
   // insert name
   $('#name').text(bio.name);
@@ -42,10 +48,29 @@ work.display = function() {
 projects.display = function() {
   projects.projects.forEach(function(project) {
     var article = $(HTMLprojectStart),
-      card = $(HTMLprojectCard);
+      card = $(HTMLprojectCard),
+      images = $(HTMLprojectImages);
     card.append(HTMLprojectTitle.replace('%data%', project.title));
     card.append(HTMLprojectDates.replace('%data%', project.dates));
     card.append(HTMLprojectDescription.replace('%data%', project.description));
+    project.images.forEach(function(image) {
+      var id = image.split('/')[1].split('.')[0];
+      var imageLink = $(HTMLprojectImageLink.replace('%data%','#' + id));
+      var imageModal = $(HTMLprojectModal.replace('%data%', id));
+      imageLink.append(HTMLprojectImageCircle.replace('%data%', image))
+      images.append(imageLink);
+      imageModal.append(
+        $(HTMLprojectModalDiv).append(
+          $(HTMLprojectModalContent).append(
+            $(HTMLprojectModalBody).append(
+              HTMLprojectModalImage.replace('%data%', image)
+            )
+          )
+        )
+      );
+      article.append(imageModal);
+    });
+    card.append(images);
     article.append(card);
     $('#project-items').append(article);
   });
@@ -54,7 +79,7 @@ projects.display = function() {
 education.display = function() {
   var article = $(HTMLschoolStart);
   education.schools.forEach(function(school) {
-    var schoolDiv = $(HTMLSchoolItem);
+    var schoolDiv = $(HTMLschoolItem);
     var schoolTitle = HTMLschoolName.replace('%data%', school.name) + HTMLschoolLocation.replace('%data%', school.location);
     var schoolSub = HTMLschoolDegree.replace('%data%', school.degree) + HTMLschoolMajor.replace('%data%', school.majors);
     schoolDiv.append(schoolTitle).append(schoolSub);
@@ -83,6 +108,7 @@ awards.display = function() {
   $('#award-items').append(article);
 }
 
+displayNav();
 bio.display();
 work.display();
 projects.display();

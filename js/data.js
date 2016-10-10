@@ -16,7 +16,7 @@ var bio = {
     'React, Angular, Node',
     'Mocha, Chai, Jasmine, Enzyme'
   ],
-  biopic: '',
+  biopic: 'images/avatar.jpg',
   display: function() {}
 };
 
@@ -26,7 +26,7 @@ var education = {
     location: 'Gandhinagar',
     degree: 'B Tech',
     majors: 'Information and Communication Technology',
-    dates: '',
+    dates: '2013 - Present',
     url: ''
   },
   {
@@ -34,7 +34,7 @@ var education = {
     location: 'Mumbai',
     degree: 'High School',
     majors: 'Computer Science',
-    dates: '',
+    dates: '2011 - 2013',
     url: ''
   }],
   onlineCourses: [{
@@ -76,7 +76,7 @@ var awards = {
     description: ''
   },
   {
-    title: 'Chairperson GDG DAIICT',
+    title: 'Chairperson Google Developer Group DAIICT',
     url: '',
     description: ''
   }],
@@ -88,13 +88,19 @@ var projects = {
     title: 'Project Surat',
     dates: 'August 2016',
     description: 'A real-time, location based file sharing system. Designed and optimized for mobile use.',
-    images: ''
+    images: [
+      'images/surat1.jpg'
+    ]
   },
   {
     title: 'SFIP',
     dates: 'Jan 2016 - April 2016',
     description: 'Portal to simplify interaction of students and faculty of various insitutions.',
-    images: ''
+    images: [
+      'images/sfip1.jpg',
+      'images/sfip2.png',
+      'images/sfip3.jpg'
+    ]
   }],
   display: function() {}
 };

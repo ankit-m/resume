@@ -1,4 +1,6 @@
-// var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLnavAvatar = '<img src="%data%" class="img-circle pull-xs-right" width="32px" alt="avatar" />';
+var HTMLnavEmail = '<a class="pull-xs-right navbar-email text-muted" href="mailto:%data%">%data%</a>';
+
 var HTMLheaderRole = '<li>%data%</li>';
 
 // var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
@@ -10,9 +12,7 @@ var HTMLblog = '<li><i class="fa fa-globe" aria-hidden="true"></i> %data%</li>';
 var HTMLlocation = '<li><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
-// var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-// var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li>%data%</li>';
 
 var HTMLworkStart = '<article class="col-md-4"></article>';
@@ -29,23 +29,27 @@ var HTMLprojectCard = '<div class="card card-block"></div>';
 var HTMLprojectDates = '<p class="card-text"><small class="text-muted">%data%</small></p>';
 var HTMLprojectTitle = '<h4 class="card-title">%data%</h4>';
 var HTMLprojectDescription = '<p class="card-text">%data%</p>';
-// var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImages = '<div class="images"></div>';
+var HTMLprojectImageLink = '<a class="cursor" data-toggle="modal" data-target="%data%"></a>';
+var HTMLprojectImageCircle = '<img src="%data%" class="img-circle project-thumbnail" width="32px" height="32px" />';
+var HTMLprojectModal = '<div class="modal fade" id="%data%"></div>';
+var HTMLprojectModalDiv = '<div class="modal-dialog" role="document"></div>';
+var HTMLprojectModalContent = '<div class="modal-content"></div>';
+var HTMLprojectModalBody = '<div class="modal-body"></div>';
+var HTMLprojectModalImage = '<img src="%data%" style="width: 100%" alt="" />';
 
 var HTMLschoolStart = '<article class="col-md-6"></article>';
-var HTMLSchoolItem = '<div class="education-item"></div>';
+var HTMLschoolItem = '<div class="education-item"></div>';
 var HTMLschoolName = '<p class="lead institute">%data%, ';
 var HTMLschoolLocation = '%data%</p>';
 var HTMLschoolDegree = '<p>%data% ';
 var HTMLschoolMajor = '(%data%)</p>';
 var HTMLschoolDivider = '<hr class="m-y-2 hidden-md-up">';
-// var HTMLschoolDates = '<div class="date-text">%data%</div>';
 
-// var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineStart = '<div class="education-item"></div>';
 var HTMLonlineTitle = '<p class="lead online-course-title">%data%</p>';
 var HTMLonlineSchool = '<p>%data%, ';
 var HTMLonlineDates = '%data%</p>';
-// var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var HTMLawardStart = '<article></article>';
 var HTMLawardItem = '<ul class="lead"></ul>';
