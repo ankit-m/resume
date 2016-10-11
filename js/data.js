@@ -2,7 +2,7 @@ var bio = {
   name: 'Ankit Muchhala',
   role: 'Front-End Developer, Designer, Football Enthusiast, Occasional Cartoonist',
   contacts: {
-    mobile: '',
+    mobile: '9876543210',
     email: 'muchhalaankit@gmail.com',
     github: 'ankit-m',
     twitter: 'ankit_muchhala',
@@ -25,23 +25,23 @@ var education = {
     name: 'DA-IICT',
     location: 'Gandhinagar',
     degree: 'B Tech',
-    majors: 'Information and Communication Technology',
+    majors: ['ICT'],
     dates: '2013 - Present',
-    url: ''
+    url: 'http://www.daiict.ac.in/daiict/index.html'
   },
   {
     name: 'KV INS Hamla',
     location: 'Mumbai',
     degree: 'High School',
-    majors: 'Computer Science',
+    majors: ['Computer Science'],
     dates: '2011 - 2013',
-    url: ''
+    url: 'http://www.kvinshamla.net/'
   }],
   onlineCourses: [{
     title: 'Udacity Front-End Nanodegree',
     school: 'Udacity',
-    dates: 'August 2016 - October 2016',
-    url: ''
+    dates: 'Aug 2016 - Present',
+    url: 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'
   }],
   display: function() {}
 };

@@ -1,5 +1,5 @@
 var HTMLnavAvatar = '<img src="%data%" class="img-circle pull-xs-right" width="32px" alt="avatar" />';
-var HTMLnavEmail = '<a class="pull-xs-right navbar-email text-muted" href="mailto:%data%">%data%</a>';
+var HTMLnavEmail = '<a class="pull-xs-right navbar-email text-muted muted-link" href="mailto:%data%">%data%</a>';
 
 var HTMLheaderRole = '<li>%data%</li>';
 
@@ -8,6 +8,14 @@ var HTMLtwitter = '<li><i class="fa fa-twitter" aria-hidden="true"></i> %data%</
 var HTMLemail = '<li><i class="fa fa-envelope" aria-hidden="true"></i> %data%</li>';
 var HTMLblog = '<li><i class="fa fa-globe" aria-hidden="true"></i> %data%</li>';
 var HTMLlocation = '<li><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</li>';
+var HTMLmobile = '<li><i class="fa fa-mobile" aria-hidden="true"></i> %data%</li>';
+
+var HTMLfooterGithub = '<div class="col-md-3"><i class="fa fa-github" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterTwitter = '<div class="col-md-3"><i class="fa fa-twitter" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterEmail = '<div class="col-md-3"><i class="fa fa-envelope" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterBlog = '<div class="col-md-3"><i class="fa fa-globe" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterLocation = '<div class="col-md-3"><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterMobile = '<div class="col-md-3"><i class="fa fa-mobile" aria-hidden="true"></i> %data%</div>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 
@@ -41,9 +49,12 @@ var HTMLschoolItem = '<div class="education-item"></div>';
 var HTMLschoolName = '<p class="lead institute">%data%, ';
 var HTMLschoolLocation = '%data%</p>';
 var HTMLschoolDegree = '<p>%data% ';
-var HTMLschoolMajor = '(%data%)</p>';
+var HTMLschoolMajor = '(%data%)';
+var HTMLschoolDates = ', %data%</p>';
 var HTMLschoolDivider = '<hr class="m-y-2 hidden-md-up">';
+var HTMLschoolLink = '<a href="%data%" target="_blank" class="muted-link"></a>';
 
+var HTMLonlineLink = '<a href="%data%" target="_blank" class="muted-link"></a>';
 var HTMLonlineStart = '<div class="education-item"></div>';
 var HTMLonlineTitle = '<p class="lead online-course-title">%data%</p>';
 var HTMLonlineSchool = '<p>%data%, ';

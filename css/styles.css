@@ -1,11 +1,10 @@
 .navbar-email {
   padding: 4px;
   margin: 0;
-  text-decoration: none;
   cursor: pointer;
 }
 
-.navbar-email:hover {
+.muted-link, .muted-link:hover, .muted-link:active {
   text-decoration: none;
 }
 
@@ -56,4 +55,15 @@
 
 .cursor {
   cursor: pointer;
+}
+
+.footer-contact {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact > li {
+  list-style: none;
+  display: inline;
 }
