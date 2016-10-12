@@ -10,7 +10,7 @@ function displayFooter() {
     HTMLfooterGithub.replace('%data%', bio.contacts.github),
     HTMLfooterTwitter.replace('%data%', bio.contacts.twitter),
     HTMLfooterEmail.replace('%data%', bio.contacts.email),
-    HTMLfooterLocation.replace('%data%', bio.contacts.location)
+    HTMLfooterBlog.replace('%data%', bio.contacts.blog)
   );
 }
 
@@ -28,8 +28,7 @@ bio.display = function() {
     HTMLgithub.replace('%data%', bio.contacts.github),
     HTMLtwitter.replace('%data%', bio.contacts.twitter),
     HTMLemail.replace('%data%', bio.contacts.email),
-    HTMLblog.replace('%data%', bio.contacts.blog),
-    HTMLmobile.replace('%data%', bio.contacts.mobile)
+    HTMLblog.replace('%data%', bio.contacts.blog)
   );
 };
 
@@ -140,4 +139,4 @@ work.display();
 projects.display();
 education.display();
 awards.display();
-displayFooter();
+// displayFooter();

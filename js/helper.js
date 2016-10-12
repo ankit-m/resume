@@ -10,12 +10,10 @@ var HTMLblog = '<li><i class="fa fa-globe" aria-hidden="true"></i> %data%</li>';
 var HTMLlocation = '<li><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</li>';
 var HTMLmobile = '<li><i class="fa fa-mobile" aria-hidden="true"></i> %data%</li>';
 
-var HTMLfooterGithub = '<div class="col-md-3"><i class="fa fa-github" aria-hidden="true"></i> %data%</div>';
-var HTMLfooterTwitter = '<div class="col-md-3"><i class="fa fa-twitter" aria-hidden="true"></i> %data%</div>';
-var HTMLfooterEmail = '<div class="col-md-3"><i class="fa fa-envelope" aria-hidden="true"></i> %data%</div>';
-var HTMLfooterBlog = '<div class="col-md-3"><i class="fa fa-globe" aria-hidden="true"></i> %data%</div>';
-var HTMLfooterLocation = '<div class="col-md-3"><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</div>';
-var HTMLfooterMobile = '<div class="col-md-3"><i class="fa fa-mobile" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterGithub = '<div class="col-md-3 text-center"><i class="fa fa-github" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterTwitter = '<div class="col-md-3 text-center"><i class="fa fa-twitter" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterEmail = '<div class="col-md-3 text-center"><i class="fa fa-envelope" aria-hidden="true"></i> %data%</div>';
+var HTMLfooterBlog = '<div class="col-md-3 text-center"><i class="fa fa-globe" aria-hidden="true"></i> %data%</div>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 
