@@ -12,6 +12,10 @@
   background-color: #eceeef;
 }
 
+.projects .card {
+  min-height: 240px;
+}
+
 .awards {
   background-color: #eceeef;
 }
@@ -66,4 +70,8 @@
 .footer-contact > li {
   list-style: none;
   display: inline;
+}
+
+.work-experience .card {
+  min-height: 240px;
 }

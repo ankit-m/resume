@@ -30,7 +30,7 @@ var HTMLworkDates = '<small class="text-muted">%data%</small>';
 var HTMLworkLocation = '<span class="card-link text-muted">%data%</span>';
 var HTMLworkDescription = '<p class="card-text">%data%</p>';
 
-var HTMLprojectStart = '<article class="col-md-4 col-lg-3 col-sm-6"></article>';
+var HTMLprojectStart = '<article class="col-md-4 col-lg-4 col-sm-6"></article>';
 var HTMLprojectCard = '<div class="card card-block"></div>';
 var HTMLprojectDates = '<p class="card-text"><small class="text-muted">%data%</small></p>';
 var HTMLprojectTitle = '<h4 class="card-title">%data%</h4>';

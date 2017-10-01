@@ -6,10 +6,10 @@ var bio = {
     email: 'muchhalaankit@gmail.com',
     github: 'ankit-m',
     twitter: 'ankit_muchhala',
-    location: 'Gandhinagar',
+    location: 'Bengaluru',
     blog: 'ankit-m.github.io'
   },
-  welcomeMessage: 'Seeking full time positions as a software developer in an environment where I can utilize my existing skills, learn and gain experience.',
+  welcomeMessage: 'Developer at Postman',
   skills: [
     'JavaScript, C, C++, Python',
     'Firebase, MySQL',
@@ -47,7 +47,15 @@ var education = {
 };
 
 var work = {
-  jobs: [{
+  jobs: [
+  {
+    employer: 'Postman',
+    title: 'Full Stack Developer',
+    location: 'Bengaluru',
+    dates: 'January 2017 - Present',
+    description: 'Developing Postman Dashboard and Postman Monitors.'
+  },
+  {
     employer: 'Google Summer of Code',
     title: 'CSE at TU Wien',
     location: 'Gandhinagar',
